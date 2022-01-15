@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections;
-
-namespace FindMininuminRotatedSortedArray
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-
-        }
-    }
-    public class Solution {
+﻿public class Solution {
     public int FindMin(int[] nums) {
         int idx = 0;
         Find(nums, 0, nums.Length-1, ref idx);
@@ -30,5 +18,4 @@ namespace FindMininuminRotatedSortedArray
             }
         }
     }
-}
 }

@@ -1,52 +1,17 @@
 ﻿public class Solution
 {
-    public IList<IList<int>> ThreeSum(int[] nums)
+    public bool ContainsDuplicate(int[] nums)
     {
-        IList<IList<int>> ans = new List<IList<int>>();
         nums = Divide(nums);
-        for (int i = 0;i<nums.Length-2;i++)
+        for (int i = 0; i < nums.Length-1; i++)
         {
-            int key = -1 * nums[i];
-            if (i!=0 && nums[i]==nums[i-1])
+            if (nums[i+1]-nums[i]==0)
             {
-                continue;
+                return true;
             }
-            int l = i + 1;
-            int r = nums.Length-1;
-            while (r>l && l<nums.Length && r>i+1)
-            {
-                if (l > i + 1 && l < nums.Length && nums[l] == nums[l - 1])
-                {
-                    l++;
-                    continue;
-                }
-                if (r < nums.Length - 1 && r > i + 1 && nums[r] == nums[r + 1])
-                {
-                    r--;
-                    continue;
-                }
-                if (nums[l] + nums[r] == key)
-                {
-                    ans.Add(new int[] { nums[i], nums[l], nums[r] });
-                    l++;
-                    r--;
-                    continue;
-                }
-                else if (nums[l] + nums[r] > key)
-                {
-                    r--;
-                    continue;
-                }
-                else
-                {
-                    l++;
-                    continue;
-                }
-
-            }
-
         }
-        return ans;
+        return false;
+        
     }
     public int[] Divide(int[] nums)
     {

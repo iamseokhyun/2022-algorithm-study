@@ -1,15 +1,4 @@
-﻿using System;
-
-namespace ContainerWithMostWater
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // Console.WriteLine("Hello World!");
-        }
-    }
-public class Solution {
+﻿public class Solution {
     public int MaxArea(int[] height) {
         int l = 0;
         int r = height.Length-1;
@@ -26,5 +15,4 @@ public class Solution {
         }
         return max;
     }
-}
 }
