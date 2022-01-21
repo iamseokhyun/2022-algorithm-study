@@ -89,6 +89,7 @@ dkms.conf
 *.sln.docstates
 *.csproj
 .vscode/
+Program.cs
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
