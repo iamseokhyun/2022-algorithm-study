@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Based on the [New Year Gift](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU) provided by Meta tech lead in Blind, we solved the following problems during the winter of 2021-2022 to develop basic programming skills necessary for engineering or research. All our solutions are included in this repository. We also learned technical skills to improve collaboration capabilities and productivity with the help of the [MIT - The Missing Semester of Your CS Eduction](https://missing.csail.mit.edu/) lecture. 
+Based on the [New Year Gift](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU) provided by Meta tech lead in Blind, we solved the following problems during the winter of 2021-2022 to develop basic programming skills necessary for engineering or research. All our solutions are included in this repository. We also learned technical skills to improve collaboration capabilities and productivity with the help of the [MIT - The Missing Semester of Your CS Eduction](https://missing.csail.mit.edu/) lecture, and applied to this study. 
 
 All discusions were conducted through Slack, and seminars using Zoom were held every Saturday. We are always looking for new study members with great passion for growth. Please feel free to contact us!
 
