@@ -1,4 +1,6 @@
-﻿public class Solution {
+﻿using System.Collections.Generic;
+using System;
+public class Solution {
     public bool CanFinish(int numCourses, int[][] prerequisites) {
         Dictionary<int, List<int>> prer = new Dictionary<int, List<int>>();
         Dictionary<int, List<int>> numsList = new Dictionary<int, List<int>>();

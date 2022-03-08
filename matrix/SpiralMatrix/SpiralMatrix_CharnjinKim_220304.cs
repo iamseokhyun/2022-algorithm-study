@@ -1,4 +1,6 @@
-﻿public class Solution {
+﻿using System.Collections.Generic;
+
+public class Solution {
     public IList<int> SpiralOrder(int[][] matrix) {
         int r = matrix.Length;
         int c = 0;
