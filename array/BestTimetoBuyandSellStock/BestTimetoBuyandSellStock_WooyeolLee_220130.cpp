@@ -4,7 +4,7 @@ int maxProfit(vector<int>& prices) {
     int profit = 0;
     
     for(int i=1;i<prices.size(); i++){
-        if(low > prices[i]){			// ÃÖ¼Ú°ª Àç¼³Á¤ ½Ã ÃÖ´ñ°ª ¸®¼Â
+        if(low > prices[i]){			// ìµœì†Ÿê°’ ìž¬ì„¤ì • ì‹œ ìµœëŒ“ê°’ ë¦¬ì…‹
             low = prices[i];
             high = 0;
         }
