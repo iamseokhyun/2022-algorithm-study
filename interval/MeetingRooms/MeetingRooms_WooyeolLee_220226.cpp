@@ -2,7 +2,7 @@
 
 bool canAttendMeetings(vector<vector<int>>& intervals){
     int n = intervals.size();
-    if(!n) return true; // intervalÀÌ ºñ¾îÀÖ´Â °æ¿ì Ã³¸®
+    if(!n) return true; // intervalÃ€ÃŒ ÂºÃ±Â¾Ã®Ã€Ã–Â´Ã‚ Â°Ã¦Â¿Ã¬ ÃƒÂ³Â¸Â®
     
     sort(intervals.begin(), intervals.end());
     
