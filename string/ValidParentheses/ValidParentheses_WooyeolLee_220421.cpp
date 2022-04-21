@@ -1,6 +1,6 @@
 /* 1st try
 - Not an impressive runtime performance
-- In case of a string s = ¡°([{]([])])¡±, we can find s is not valid at 4th character but this algorithm does not implement it.
+- In case of a string s = Â¡Â°([{]([])])Â¡Â±, we can find s is not valid at 4th character but this algorithm does not implement it.
 */
 
 bool isValid(string s) {
