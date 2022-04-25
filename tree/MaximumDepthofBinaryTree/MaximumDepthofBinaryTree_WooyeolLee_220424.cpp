@@ -8,3 +8,10 @@ int DFS(TreeNode* node){
 int maxDepth(TreeNode* root) {
     return DFS(root);
 } // runtime : 12 ms (faster than 53.79 %), memory usage : 18.7 MB (less than 89.91 %)
+
+
+// Simpler code !
+int maxDepth(TreeNode* root) {
+    if(root == nullptr) return 0;
+    return 1 + max(maxDepth(root->left), maxDepth(root->right));
+} // runtime : 12 ms (faster than 53.79 %), memory usage : 18.8 MB (less than 56.60 %)
