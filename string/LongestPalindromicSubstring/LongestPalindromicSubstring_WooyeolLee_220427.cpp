@@ -10,7 +10,7 @@ string longestPalindrome(string s) {
         isPalindromicCache[0][0] = true;
         max_len = 2; max_len_pos = 1;     
     }         
-    for(int pos=1;pos<n;pos++) // pos+1 th character of the string s        
+    for(int pos=1;pos<n;pos++) // pos+1 index character of the string s        
         for(int len=0;len<pos+1;len++){ // check if substring of s, pos-len to pos+1 character **length of len+2**, is palindromic       
             bool isPalindromic = (s[pos+1] == s[pos-len]);               
             if(isPalindromic && len > 1)                  
@@ -47,7 +47,7 @@ string longestPalindrome(string s) {
         isPalindromicCache[0][0] = true;    
         max_len = 2; max_len_pos = 1;    
     }        
-    for(int pos=1;pos<n;pos++) // pos+1 th character of the string s        
+    for(int pos=1;pos<n;pos++) // pos+1 index character of the string s        
         for(int len=0;len<pos+1;len++){ // check if substring of s, pos-len to pos+1 character **length of len+2**, is palindromic       
             bool isPalindromic = (s[pos+1] == s[pos-len]);                
             if(isPalindromic && len > 1)                   
