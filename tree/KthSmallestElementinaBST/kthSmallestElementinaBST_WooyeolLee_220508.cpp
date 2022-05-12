@@ -28,3 +28,26 @@ void insertNodeVal(TreeNode* root, list<int>& sorted, list<int>::iterator it){
   However, *if the BST is modified often(i.e. we can do insert and delete operations) 
   and you need to find the kth smallest frequently*, this algorithm will be useful.
 */
+
+
+
+
+int kthSmallest(TreeNode* root, int k) {
+    int ret = NULL;
+    inorderTvsl(root, ret, k);
+    return ret;
+}
+void inorderTvsl(TreeNode* root, int& target, int& k){
+    if(!root) return;
+    inorderTvsl(root->left, target, k);
+    if(--k == 0){
+        target = root->val;
+        return;
+    }
+    inorderTvsl(root->right, target, k);
+} // runtime : 16 ms (faster than 82.52 %), memory usage : 24.1 MB (less than 88.29 %)
+
+/*
+- Algorithm using “inorder traversal”. 
+This algorithm is useful only if we find kth smallest element few times.
+*/
